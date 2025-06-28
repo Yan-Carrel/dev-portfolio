@@ -1,0 +1,11 @@
+button{
+    padding: 1rem;
+    font-size : 1rem;
+    background-color: var(--couleur_accent);
+    font-weight : bold;
+    font-family: var(--police_texte);
+    border-radius : 10px;
+    border : none;
+    color : black;
+    display : inline-block;
+}

@@ -1,0 +1,334 @@
+/* @import url(modules/cta.css); */
+
+:root{
+    /* Couleur */
+    --fond_principal : #101820;
+    --fond_logo : #232121;
+    --texte_principal :  #f0f0f0;
+    --texte_secondaire : #999999;
+    --couleur_accent : #00c4cc;
+    --bordure_diviseur : #222;
+    --hover_button : #00f0f7;
+
+    /* Polices */
+    --police_titres : "Poppins";
+    --police_titres2 : "Outfit";
+    --police_styleTitres : "Bold"; 
+
+    --police_texte : "Inter";
+    --police_texte2 : "Open Sans";
+    --police_texte3 : "Rubik Regular";
+    --police_bouton : "Space Mono";
+
+    /* Taille de police */
+    --tailleH1 : 2rem;
+    --tailleH2 : 1.5rem;
+    --taille_paragraphe : 1rem;
+    --petit_texte : .875rem;
+    --bouton_lien : 1.125rem; 
+
+    /* Espacement */
+    --espace_max_contenu: 90vw;
+    --padding_gloval : 1rem;
+    --espace_section : 4rem; /* a 6rem*/
+    --espace_titre_texte : 1.5rem;
+
+    /* Formes et styles */
+    --button_radius : 8px;
+
+}
+
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body{
+    background: linear-gradient(135deg, #3a6073, #16222a);
+}
+
+nav{
+    background-color : var(--fond_logo);
+    display: flex;
+    justify-content: space-between;
+    /* padding: 5px; */
+    align-items: center;
+    margin-bottom: var(--espace_section);
+}
+
+#nav-link{
+    display: none;
+}
+
+.logo{
+    height: 3rem;
+}
+
+.hamberger-menu{
+    background: none;
+    border: none;
+}
+
+.hamberger-menu img{
+    height: 3rem;
+}
+
+#page-content{
+    padding: 0 5vw;
+}
+
+#hero-main-content{
+    margin-bottom : 1rem;
+}
+
+main{
+    margin-bottom: var(--espace_section);
+}
+
+#texte-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: var(--espace_section);
+    text-align : center;
+    font-weight: bold;
+}
+
+.very-big-text{
+    text-align : center;
+    font-size : 2rem;
+    font-weight : bold;
+    margin-bottom: var(--espace_titre_texte);
+}
+
+/* .cta-mobile{
+    display : flex;
+    justify-content: center;
+} */
+
+#couleur-accent{
+    color : var(--couleur_accent);
+    font-weight : bold;
+}
+
+/* #texte-presentation{
+    margin-bottom: var(--espace_titre_texte);
+} */
+
+#profile-pic{
+    width: 200px;
+    height : 200px;
+    border : solid black 2px;
+    margin : 0 auto;
+    border-radius : 50%;
+    background-image: url(profile.png);
+    background-size : cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+h1{
+    font-size: var(--tailleH1);
+    font-family: var(--police_titres);
+    font-weight: var(--styleTitres);
+}
+
+h2{
+    font-size: var(--tailleH2);
+    font-family: var(--police_titres2);
+}
+
+p{
+    font-family: var(--police_texte);
+    font-size: var(--taille_paragraphe);
+}
+
+i{
+    font-size : 4rem;
+}
+
+button{
+    font-family: var(--police_bouton);   
+}
+
+/* section a propos */
+#a-propos{
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    margin-bottom : var(--espace_section);
+}
+
+#a-propos-paragraph{
+    margin-bottom : var(--espace_titre_texte);
+    text-align: justify;
+}
+
+#a-propos-paragraph p{
+    margin-bottom: var(--espace_titre_texte);
+}
+
+/* #a-propos-paragraph p:first-of-type{
+    max-width: 400px;
+} */
+
+#a-propos > h2, #a-propos > img{
+    margin-bottom : var(--espace_titre_texte);
+}
+
+#img-a-propos{
+    width : 100%;
+    margin-bottom: var(--espace_titre_texte);
+}
+
+#a-propos-paragraph button{
+    max-width : 250px;
+    margin : 0 auto ;
+}
+
+#a-propos-paragraph div{
+    text-align: center;
+}
+
+
+
+/* section projets */
+/* #projets{
+    margin-top: var(--espace_section);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: var(--espace_section);
+    /* gap: 1rem; 
+}
+
+.bloc-projet{
+    background-color: #1a2a35;
+    margin-top: 10px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.bloc-projet *{
+    text-align: center;
+} */
+
+/* compétences */
+#competences h2{
+    text-align: center;
+    margin-bottom: var(--espace_titre_texte);
+}
+
+#mes-competences{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: var(--espace_section);
+    gap: var(--espace_titre_texte);
+}
+
+.list-competence{
+    display: flex;
+    align-items: center;
+    background-color: var(--fond_logo);
+    padding: 1rem;
+    max-width : 900px;
+}
+
+/* contact */
+#contact{
+    margin-bottom: 2rem;
+}
+
+.contact-list-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-list-container li, .contact-list-container a{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+footer{
+    text-align: center;
+}
+
+/* ----------------- TABLET ----------------- */
+@media screen and (min-width: 768px) {
+
+  :root {
+    --tailleH1: 2.5rem;
+    --tailleH2: 2rem;
+    --taille_paragraphe: 1.125rem;
+  }
+
+  .hamberger-menu{
+    display : none;
+}
+
+  #nav-link{
+    display: flex;
+    font-size : var(--tailleH2);
+    gap : 4rem;
+    margin-right: 4rem;
+    /* text-decoration : none; */
+  }
+
+  #nav-link > li > a{
+    text-decoration: none;
+    color: white;
+  }
+
+  #nav-link > li{
+    list-style: none;
+  }
+
+  .cta-mobile{
+    display : none;
+  }
+
+  .very-big-text{
+    /* width: 500px; */
+    font-size: 3rem;
+  }
+
+  #texte-hero{
+    justify-content : center;
+  }
+
+  #hero-main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+  }
+
+  #img-a-propos{
+    width : 40%;
+    aspect-ratio: 1 / 1;
+    /* max-width: 800px; */
+}
+
+#a-propos-contents{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+}
+
+/* #a-propos{
+
+} */
+}
