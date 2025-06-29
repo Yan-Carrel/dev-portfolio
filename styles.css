@@ -197,6 +197,45 @@ button{
 }
 
 
+/* Table */
+table{
+    /* border: solid 1px #fff; */
+    text-align: center;
+    width: 100%;
+    border-collapse : collapse;
+    max-width : 900px;
+    margin : 0 auto;
+}
+
+.first-row{
+    background-color : var(--bordure_diviseur);
+}
+
+.colonne-service{
+    max-width: 150px;
+    text-align: justify;
+    padding: 1rem;
+}
+
+#services{
+    margin-bottom: var(--espace_section);
+}
+
+#services h2{
+    margin-bottom: var(--espace_titre_texte);
+    text-align: center;
+}
+
+/* .colonne-duree{
+    max-width: 50px;
+} */
+
+tr td, tr th{
+    border: solid 1px var(--couleur_accent);
+}
+
+
+
 
 /* section projets */
 /* #projets{
@@ -279,7 +318,7 @@ footer{
 
   #nav-link{
     display: flex;
-    font-size : var(--tailleH2);
+    font-size : var(--taille_paragraphe);
     gap : 4rem;
     margin-right: 4rem;
     /* text-decoration : none; */
