@@ -1,6 +1,7 @@
 .cta{
     background: linear-gradient(135deg, #1c1b2f, #302b63);
     padding: 5px;
+    height : 175px;
     width: 100%;
     border-radius : 8px;
     display : none;

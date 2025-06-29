@@ -24,6 +24,7 @@
     --tailleH1 : 2rem;
     --tailleH2 : 1.5rem;
     --taille_paragraphe : 1rem;
+    --taille_texte_hamburger : 3rem;
     --petit_texte : .875rem;
     --bouton_lien : 1.125rem; 
 
@@ -46,7 +47,9 @@
 }
 
 body{
+    position: relative;
     background: linear-gradient(135deg, #3a6073, #16222a);
+    /* overflow: hidden; */
 }
 
 nav{
@@ -62,6 +65,10 @@ nav{
     display: none;
 }
 
+#nav-link a:hover{
+    color: blue;
+}
+
 .logo{
     height: 3rem;
 }
@@ -73,6 +80,54 @@ nav{
 
 .hamberger-menu img{
     height: 3rem;
+}
+
+.hamburger-menu-slider{
+    position : fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height : 100%;
+    background-color: #3a6073;
+    transition : transform 0.5s ease-in-out ;
+    transform: translateX(-100%);
+    z-index : 1000;
+    overflow-y: auto;
+}
+
+.hamburger-menu-slider.active{
+    transform: translateX(0);
+
+}
+
+/* .hamburger-upper-container{
+    background-color: var(--fond_logo);
+} */
+
+#hamburger-upper-container div{
+    display: flex;
+    justify-content: space-between;
+    align-items : center;
+    color : white;
+    padding-bottom: .3rem;
+    text-align: center;
+    font-size: var(--taille_texte_hamburger);
+}
+
+hr{
+    margin-bottom: var(--espace_section)
+}
+
+#nav-link-hamburg{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: var(--taille_texte_hamburger);
+    text-align: center;
+}
+
+#nav-link-hamburg a{
+    text-decoration : none;
 }
 
 #page-content{
@@ -117,7 +172,7 @@ main{
     margin-bottom: var(--espace_titre_texte);
 } */
 
-#profile-pic{
+.profile-pic{
     width: 200px;
     height : 200px;
     border : solid black 2px;
@@ -135,6 +190,7 @@ h1{
     font-size: var(--tailleH1);
     font-family: var(--police_titres);
     font-weight: var(--styleTitres);
+    text-align: center;
 }
 
 h2{
@@ -153,6 +209,10 @@ i{
 
 button{
     font-family: var(--police_bouton);   
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 /* section a propos */
