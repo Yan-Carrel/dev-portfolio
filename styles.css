@@ -100,10 +100,6 @@ nav{
 
 }
 
-/* .hamburger-upper-container{
-    background-color: var(--fond_logo);
-} */
-
 #hamburger-upper-container div{
     display: flex;
     justify-content: space-between;
@@ -158,19 +154,10 @@ main{
     margin-bottom: var(--espace_titre_texte);
 }
 
-/* .cta-mobile{
-    display : flex;
-    justify-content: center;
-} */
-
 #couleur-accent{
     color : var(--couleur_accent);
     font-weight : bold;
 }
-
-/* #texte-presentation{
-    margin-bottom: var(--espace_titre_texte);
-} */
 
 .profile-pic{
     width: 200px;
@@ -209,6 +196,11 @@ i{
 
 button{
     font-family: var(--police_bouton);   
+}
+
+button a{
+    color: #fff;
+    text-decoration: none;
 }
 
 button:hover{
@@ -286,10 +278,6 @@ table{
     text-align: center;
 }
 
-/* .colonne-duree{
-    max-width: 50px;
-} */
-
 tr td, tr th{
     border: solid 1px var(--couleur_accent);
 }
@@ -297,28 +285,7 @@ tr td, tr th{
 
 
 
-/* section projets */
-/* #projets{
-    margin-top: var(--espace_section);
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-around;
-    margin-bottom: var(--espace_section);
-    /* gap: 1rem; 
-}
 
-.bloc-projet{
-    background-color: #1a2a35;
-    margin-top: 10px;
-    padding: 2rem;
-    width: 100%;
-    max-width: 30rem;
-}
-
-.bloc-projet *{
-    text-align: center;
-} */
 
 /* compétences */
 #competences h2{
